@@ -1,0 +1,36 @@
+﻿{
+  "drivers": [
+    {
+      "type": "firefox",
+      "options": {
+        "arguments": [ "start-maximized" ]
+      }
+    },
+    {
+      "type": "chrome",
+      "options": {
+        "arguments": [ "start-maximized" ]
+      }
+    }
+  ],
+  "AccountEmail": "admin@mail.com",
+  "AccountPassword": "abc123",
+  "culture": "en-US",
+  "useNUnitTestName": true,
+  "logNUnitError": true,
+  "verificationTimeout": 10,
+  "baseUrl": "https://coe-qa.github.io/",
+  "takeScreenshotOnNUnitError": false,
+  "logConsumers": [
+    {
+      "type": "nunit",
+      "minLevel": "Info",
+      "sectionFinish": false
+    },
+    {
+      "type": "nlog",
+      "minLevel": "Trace",
+      "sectionFinish": false
+    }
+  ]
+}
